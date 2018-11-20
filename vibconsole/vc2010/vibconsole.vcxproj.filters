@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\js">
+      <UniqueIdentifier>{ca0469f4-5eab-4b4e-8b88-1458d7741fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\visualib">
+      <UniqueIdentifier>{0d1ca38f-c911-4dd8-a055-af064f2f0013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\visualib\VIB">
+      <UniqueIdentifier>{379f24d9-1c73-4a1b-ac65-85e503f42558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VIB">
+      <UniqueIdentifier>{59f05235-b3d7-4f51-a0d5-8ebaafc857ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libcurl">
+      <UniqueIdentifier>{c657ee0c-e1f7-4f43-98fb-e2baa9dfaeb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libxml2">
+      <UniqueIdentifier>{e7b290fe-9f01-4d03-96d5-3aeb66ea80bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\VisualIB\VIB.h">
+      <Filter>Header Files\visualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBDatabase.h">
+      <Filter>Header Files\visualib\VIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBDataSet.h">
+      <Filter>Header Files\visualib\VIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBError.h">
+      <Filter>Header Files\visualib\VIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBSQL.h">
+      <Filter>Header Files\visualib\VIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBTransaction.h">
+      <Filter>Header Files\visualib\VIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\VIB\VIBProperties.h">
+      <Filter>Header Files\visualib\VIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsapi.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jscompat.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsconfig.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jscpucfg.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jslong.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsotypes.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jspubtd.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jstypes.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsutil.h">
+      <Filter>Header Files\js</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sqlLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\vibdefines.h">
+      <Filter>Header Files\visualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\vibtypes.h">
+      <Filter>Header Files\visualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VisualIB\vibsql.h">
+      <Filter>Header Files\visualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\prometheusdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\myjsconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\jsengine2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\jsnatives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\inifile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\adodatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curl.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curlbuild.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curlrules.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curlver.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\easy.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\mprintf.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\multi.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\stdcheaders.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\typecheck-gcc.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\types.h">
+      <Filter>Header Files\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\curl_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\c14n.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\catalog.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\chvalid.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\debugXML.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\dict.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\DOCBparser.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\encoding.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\entities.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\globals.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\hash.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\HTMLparser.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\HTMLtree.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\list.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\nanoftp.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\nanohttp.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\parser.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\parserInternals.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\pattern.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\relaxng.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\SAX.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\SAX2.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\schemasInternals.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\schematron.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\threads.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\tree.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\uri.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\valid.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xinclude.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xlink.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlautomata.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlerror.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlexports.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlIO.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlmemory.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlmodule.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlreader.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlregexp.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlsave.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlschemas.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlschemastypes.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlstring.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlunicode.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlversion.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlwriter.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xpath.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xpathInternals.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xpointer.h">
+      <Filter>Header Files\libxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utfconv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PSProxyCLR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBDatabase.cpp">
+      <Filter>Source Files\VIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBDataSet.cpp">
+      <Filter>Source Files\VIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBSQL.cpp">
+      <Filter>Source Files\VIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBTransaction.cpp">
+      <Filter>Source Files\VIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sqlLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\prometheusdb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsengine2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsnatives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\inifile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jswin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsdatetime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jssdl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsgl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\adodatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsado.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\curl_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jscurl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\utf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jsps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\jssymbol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\js-1.8.0\js\src\jsproto.tbl">
+      <Filter>Header Files\js</Filter>
+    </None>
+  </ItemGroup>
+</Project>

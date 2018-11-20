@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{104F316F-E8A5-4DAA-95AB-A3691F7916C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vibconsole</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>S:\sdl_mixer-1.2.12\include;S:\sdl_net-1.2.8\include;S:\sdl-1.2.15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>S:\sdl_mixer-1.2.12\lib\x86;S:\sdl_net-1.2.8\lib\x86;S:\sdl-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(CommonProgramFiles)\System\ado;$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>S:\sdl_mixer-1.2.12\include;S:\sdl_net-1.2.8\include;S:\sdl-1.2.15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>S:\sdl_mixer-1.2.12\lib\x86;S:\sdl_net-1.2.8\lib\x86;S:\sdl-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(CommonProgramFiles)\System\ado;$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;VIBC_NO_VISUALIB;VIBC_NO_POWERSHELL;VIBC_NO_SDL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\js-1.8.0\js\src;..\..\visualib;..\..\libcurl-7.19.3\include;..\..\libxml2-2.7.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;winmm.lib;rpcrt4.lib;%(AdditionalDependencies);../bin/js32.lib;../bin/VisualIB.lib;../bin/libcurl.lib;../bin/libxml2.lib;../bin/PSProxyCLR.lib;SDL.lib;SDL_net.lib;SDL_mixer.lib;opengl32.lib</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>s:\js-1.8.0\js\src;s:\visualib;s:\libcurl-7.19.3\include;s:\libxml2-2.7.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;winmm.lib;rpcrt4.lib;../bin/js32.lib;../bin/VisualIB.lib;../bin/curllib.lib;../bin/libxml2.lib;../bin/PSProxyCLR.lib;SDL.lib;SDL_net.lib;SDL_mixer.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsapi.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jscompat.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsconfig.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jscpucfg.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jslong.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsotypes.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jspubtd.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jstypes.h" />
+    <ClInclude Include="..\..\js-1.8.0\js\src\jsutil.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curl.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curlbuild.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curlrules.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\curlver.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\easy.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\mprintf.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\multi.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\stdcheaders.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="..\..\libcurl-7.19.3\include\curl\types.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\c14n.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\catalog.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\chvalid.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\debugXML.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\dict.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\DOCBparser.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\encoding.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\entities.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\globals.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\hash.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\HTMLparser.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\HTMLtree.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\list.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\nanoftp.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\nanohttp.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\parser.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\parserInternals.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\pattern.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\relaxng.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\SAX.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\SAX2.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\schemasInternals.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\schematron.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\threads.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\tree.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\uri.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\valid.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xinclude.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xlink.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlautomata.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlerror.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlexports.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlIO.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlmemory.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlmodule.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlreader.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlregexp.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlsave.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlschemas.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlschemastypes.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlstring.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlunicode.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlversion.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xmlwriter.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xpath.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xpathInternals.h" />
+    <ClInclude Include="..\..\libxml2-2.7.8\include\libxml\xpointer.h" />
+    <ClInclude Include="..\..\VisualIB\VIB.h" />
+    <ClInclude Include="..\..\VisualIB\vibdefines.h" />
+    <ClInclude Include="..\..\VisualIB\vibsql.h" />
+    <ClInclude Include="..\..\VisualIB\vibtypes.h" />
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBDatabase.h" />
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBDataSet.h" />
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBError.h" />
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBSQL.h" />
+    <ClInclude Include="..\..\VisualIB\VIB\classVIBTransaction.h" />
+    <ClInclude Include="..\..\VisualIB\VIB\VIBProperties.h" />
+    <ClInclude Include="..\source\adodatabase.h" />
+    <ClInclude Include="..\source\curl_file.h" />
+    <ClInclude Include="..\source\inifile.h" />
+    <ClInclude Include="..\source\jsengine2.h" />
+    <ClInclude Include="..\source\jsnatives.h" />
+    <ClInclude Include="..\source\main.h" />
+    <ClInclude Include="..\source\misc.h" />
+    <ClInclude Include="..\source\myjsconfig.h" />
+    <ClInclude Include="..\source\prometheusdb.h" />
+    <ClInclude Include="..\source\PSProxyCLR.h" />
+    <ClInclude Include="..\source\sqlLib.h" />
+    <ClInclude Include="..\source\timer.h" />
+    <ClInclude Include="..\source\utf.h" />
+    <ClInclude Include="..\source\utfconv.h" />
+    <ClInclude Include="..\source\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBDatabase.cpp" />
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBDataSet.cpp" />
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBSQL.cpp" />
+    <ClCompile Include="..\..\VisualIB\VIB\classVIBTransaction.cpp" />
+    <ClCompile Include="..\source\adodatabase.cpp" />
+    <ClCompile Include="..\source\curl_file.cpp" />
+    <ClCompile Include="..\source\inifile.cpp" />
+    <ClCompile Include="..\source\jsado.cpp" />
+    <ClCompile Include="..\source\jscurl.cpp" />
+    <ClCompile Include="..\source\jsdatetime.cpp" />
+    <ClCompile Include="..\source\jsengine2.cpp" />
+    <ClCompile Include="..\source\jsext.cpp" />
+    <ClCompile Include="..\source\jsgl.cpp" />
+    <ClCompile Include="..\source\jsnatives.cpp" />
+    <ClCompile Include="..\source\jsps.cpp" />
+    <ClCompile Include="..\source\jssdl.cpp" />
+    <ClCompile Include="..\source\jssymbol.cpp" />
+    <ClCompile Include="..\source\jswin32.cpp" />
+    <ClCompile Include="..\source\jsxml.cpp" />
+    <ClCompile Include="..\source\main.cpp" />
+    <ClCompile Include="..\source\misc.cpp" />
+    <ClCompile Include="..\source\prometheusdb.cpp" />
+    <ClCompile Include="..\source\sqlLib.cpp" />
+    <ClCompile Include="..\source\timer.cpp" />
+    <ClCompile Include="..\source\utf.cpp" />
+    <ClCompile Include="..\source\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\js-1.8.0\js\src\jsproto.tbl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
